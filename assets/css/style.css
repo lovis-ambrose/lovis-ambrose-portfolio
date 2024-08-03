@@ -380,31 +380,48 @@ section {
 .facts .count-box {
   padding: 30px;
   width: 100%;
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Column layout for stacking */
+  align-items: center; /* Center alignment */
 }
 
 .facts .count-box i {
-  display: block;
   font-size: 44px;
   color: #149ddd;
-  float: left;
-  line-height: 0;
+  margin-bottom: 10px; /* Space between the icon and counter */
+}
+
+.facts .count-box .counter-wrapper {
+  display: flex; /* Flexbox for horizontal alignment */
+  flex-direction: row;
+  align-items: baseline; /* Align items along their baseline */
 }
 
 .facts .count-box span {
   font-size: 48px;
   line-height: 40px;
-  display: block;
   font-weight: 700;
   color: #050d18;
-  margin-left: 60px;
+}
+
+.facts .count-box .purecounter {
+  margin-right: 2px; /* Space between the number and the plus sign */
+}
+
+.facts .count-box .plus-sign {
+  font-size: 48px; /* Matches the number font size */
+  line-height: 40px;
+  font-weight: 700;
+  color: #050d18;
 }
 
 .facts .count-box p {
   padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
+  margin: 10px 0 0 0; /* Adjust margin for space above the text */
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #122f57;
+  text-align: center; /* Center the text */
 }
 
 .facts .count-box a {
